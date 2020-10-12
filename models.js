@@ -10,7 +10,7 @@ var LoanSchema = new Schema({
 	Type: String,
 	AccountId: [{ type: Schema.Types.ObjectId, ref: "account" }],
 	CustomerId: [{ type: Schema.Types.ObjectId, ref: "customer" }]
-})
+})//change
 var CustomerSchema = new Schema({
 	Name: String,
 	Address: String,
