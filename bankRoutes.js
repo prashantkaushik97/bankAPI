@@ -1,7 +1,7 @@
 'use strict';
 var express = require("express");
 var router = express.Router();
-var Bank = require("./models").Bank;
+var Bank = require("./models").bank;
 router.param("bID", function (req, res, next, id) {
 	Bank.findById(id, function (err, doc) {
 		if (err) return next(err);
